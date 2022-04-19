@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 1 - Bootstrap</title>
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="container p-5">
+      <!-- Nav var -->
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"
+          ><img src="./Imagenes/logo-bookmark.svg" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          name="toggler"
+          aria-label=""
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <img src="./Imagenes/icon-hamburger.svg" alt="" />
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item align-self-center">
+              <a class="nav-link px-4" href="#">Features</a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class="nav-link px-4" href="#">Pricing</a>
+            </li>
+            <li class="nav-item align-self-center">
+              <a class="nav-link px-4" href="#">Contact</a>
+            </li>
+            <li class="nav-item align-self-center">
+              <button type="button" class="red-btn shadow" aria-label="">
+                Login
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Intro section -->
+      <div class="container-fluid pt-5">
+        <div class="row flex-row-reverse">
+          <div class="col-md-6 p-0 col-md-push-6">
+            <div class="col-sm-12">
+              <img
+                src="./Imagenes/illustration-hero.svg"
+                class="hero-img"
+                alt=""
+              />
+            </div>
+            <div class="col-sm-12 blue-bg-right"></div>
+          </div>
+          <div class="col-md-6 left-1 col-md-pull-6">
+            <div class="row">
+              <div class="col-sm-12 pr-5">
+                <h1>A Simple Bookmark Manager</h1>
+                <p>
+                  A clean and simple interface to organize your favourite
+                  websites. Open a new browser tab and see your sites load
+                  instantly. Try it for free.
+                </p>
+              </div>
+              <div class="col-sm-12">
+                <button
+                  type="button"
+                  class="blue-btn me-3 p-2 shadow"
+                  aria-label=""
+                >
+                  Get it on Chrome
+                </button>
+                <button type="button" class="white-bt p-2" aria-label="">
+                  Get it on Firefox
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- features section -->
+      <div class="container text-center textbox">
+        <h2>Features</h2>
+        <p>
+          Our aim is to make it quick and easy for you to access your favourite
+          websites. Your bookmarks sync between your devices so you can access
+          them on the go.
+        </p>
+        <div class="row">
+          <div class="col-md-4 p-0">
+            <button
+              data-target="#carouselIndicators"
+              data-slide-to="0"
+              type="button"
+              name="button"
+              class="feature-btn active-tab"
+              aria-label=""
+            >
+              Simple Bookmarking
+            </button>
+          </div>
+          <div class="col-md-4 p-0">
+            <button
+              data-target="#carouselIndicators"
+              data-slide-to="1"
+              type="button"
+              name="button"
+              class="feature-btn"
+              aria-label=""
+            >
+              Speedy Searching
+            </button>
+          </div>
+          <div class="col-md-4 p-0">
+            <button
+              data-target="#carouselIndicators"
+              data-slide-to="2"
+              type="button"
+              name="button"
+              class="feature-btn"
+              aria-label=""
+            >
+              Easy Sharing
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- carousel -->
+      <div
+        id="carouselIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="false"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <div class="col-sm-12">
+                    <img
+                      src="./Imagenes/illustration-features-tab-1.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-12 blue-bg-left"></div>
+                </div>
+                <div class="col-lg-6 left-1">
+                  <div class="row">
+                    <div class="col-sm-12 pl-4 ml-3">
+                      <h2>Bookmark in one click</h2>
+                      <p>
+                        Organize your bookmarks however you like. Our simple
+                        drag-and-drop interface gives you complete control over
+                        how you manage your favourite sites.
+                      </p>
+                    </div>
+                    <div class="col-sm-12 pl-4 ml-3">
+                      <button
+                        type="button"
+                        class="get-it-btn blue-btn"
+                        aria-label=""
+                      >
+                        More info
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <div class="col-sm-12">
+                    <img
+                      src="./Imagenes/illustration-features-tab-2.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-12 blue-bg-left"></div>
+                </div>
+                <div class="col-lg-6 left-1">
+                  <div class="row">
+                    <div class="col-sm-12 pr-5">
+                      <h2>Intelligent search</h2>
+                      <p>
+                        Our powerful search feature will help you find saved
+                        sites in no time at all. No need to trawl through all of
+                        your bookmarks.
+                      </p>
+                    </div>
+                    <div class="col-sm-12">
+                      <button
+                        type="button"
+                        class="get-it-btn blue-btn"
+                        aria-label=""
+                      >
+                        More info
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container-fluid feature-1">
+              <div class="row">
+                <div class="col-lg-6 p-0">
+                  <div class="col-sm-12">
+                    <img
+                      src="./Imagenes/illustration-features-tab-3.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-12 blue-bg-left"></div>
+                </div>
+                <div class="col-lg-6 left-1">
+                  <div class="row">
+                    <div class="col-sm-12 pr-5">
+                      <h2>Share your bookmarks</h2>
+                      <p>
+                        Easily share your bookmarks and collections with others.
+                        Create a shareable link that you can send at the click
+                        of a button.
+                      </p>
+                    </div>
+                    <div class="col-sm-12">
+                      <button
+                        type="button"
+                        class="get-it-btn blue-btn"
+                        aria-label=""
+                      >
+                        More info
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Extensions area-->
+      <div class="container text-center textbox">
+        <h2 class="my-4 mx-5">Download the extension</h2>
+        <p class="mb-5 mx-5">
+          We've got more browsers in the pipeline. Please do let us know if
+          you've got a favourite you'd like us to prioritize.
+        </p>
+        <div class="row cards">
+          <div class="col-lg-4 align-self-start mt-4">
+            <div class="extension">
+              <img src="./Imagenes/logo-chrome.svg" alt="" />
+              <h3>Add to Chrome</h3>
+              <p>Minimum version 62</p>
+              <img src="./Imagenes/bg-dots.svg" class="dot-bg" alt="" />
+              <button
+                type="button"
+                name="button"
+                class="blue-btn add-install"
+                aria-label=""
+              >
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 align-self-center">
+            <div class="extension">
+              <img src="./Imagenes/logo-firefox.svg" alt="" />
+              <h3>Add to Firefox</h3>
+              <p>Minimum version 55</p>
+              <img src="./Imagenes/bg-dots.svg" class="dot-bg" alt="" />
+              <button
+                type="button"
+                name="button"
+                class="blue-btn add-install"
+                aria-label=""
+              >
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-4 align-self-bottom">
+            <div class="extension">
+              <img src="./Imagenes/logo-opera.svg" alt="" />
+              <h3>Add to Opera</h3>
+              <p>Minimum version 46</p>
+              <img src="./Imagenes/bg-dots.svg" class="dot-bg" alt="" />
+              <button
+                type="button"
+                name="button"
+                class="blue-btn add-install"
+                aria-label=""
+              >
+                Add & Install Extension
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Collapse component-->
+    <div class="container text-center textbox">
+      <h2 class="my-4 mx-5">Frequently Asked Questions</h2>
+      <p class="mb-5 mx-5">
+        Here are some of our FAQs. If you have any other questions you'd like
+        answered please feel free to email us.
+      </p>
+    </div>
+    <div class="container">
+      <div class="row justify-content-center align-content-center">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                What is Bookmark?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                How can I request a new browser?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Is there a mobile app?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                What about other Chromium browsers?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the fourth item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+        </div>       
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row text-center textbox">
+        <div class="col-sm-12 pl-4 ml-3 mt-2">
+          <button
+            type="button"
+            class="get-it-btn blue-btn"
+            aria-label=""
+          >
+            More info
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--form-->
+    <div class="container-fluid cta">
+      <p>35,000+already joined</p>
+        <h2 class="mb-5">Stay up-to-date with what we're doing</h2>
+          <div class="row">
+      <div class="col-md-6 err p-0">
+        <input type="email" class="cta-email m-0" name="cta-email" placeholder="Enter your email">
+        <img src="images/icon-error.svg" alt="" class="err-icon">
+        <p><em>Whoops, make sure it's an email.</em></p>
+      </div>
+      <div class="col-md-6">
+    <button type="button" name="contact" class="red-btn cta-btn" aria-label="">Contact Us</button>
+      </div>
+    </div>
+    </div>
+    <!--footer-->
+    <div class="container-fluid footer-nav">
+      <footer>
+        <nav class="navbar-expand-md m-0 justify-content-start">
+          <div class="row">
+            <div class="col-md-3 footer-brand align-self-center mb-2">
+              <a class="navbar-brand" href="#"><img src="./Imagenes/logo-bookmark.svg" alt="logo" class="filter-white"></a>
+            </div>
+            <div class="col-md-6">
+              <div class="navbar footer-nav-bar justify-content-center mb-2">
+                <ul class="navbar-nav">
+                  <li class="nav-item align-self-center">
+                    <a class="nav-link px-4" href="#">Features</a>
+                  </li>
+                  <li class="nav-item align-self-center">
+                    <a class="nav-link px-4" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item align-self-center">
+                    <a class="nav-link px-4" href="#">Contact</a>
+                  </li>
+              </ul>
+              </div>
+            </div>
+            <div class="col-md-3 text-center align-self-center">
+              <img src="./Imagenes/icon-facebook.svg" class="fb-logo align-self-center mx-3" alt="">
+              <img src="./Imagenes/icon-twitter.svg" class="twitter-logo align-self-center mx-3" alt="">
+            </div>
+          </div>
+        </nav>
+      </footer>    
+    </div>
+    
+    
+    
+    
+    
+      
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+     <!-- <script src="./node_modules/@popperjs/core/dist/cjs/popper-base.js"></script>    -->
+    <script src="./node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+  </body>
+</html>
